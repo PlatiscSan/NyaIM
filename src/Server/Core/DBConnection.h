@@ -1,35 +1,36 @@
 #ifndef DB_CONNECTION_H
 #define DB_CONNECTION_H
 
-#include "ServerConfig.h"
+#include <any>
+#include <functional>
 
 #include <sql.h>
 #include <sqlext.h>
 
 namespace NyaIMServer::core::db {
 
-	class DBConnection {
+	class DBConnection final {
 
 	public:
 
-		DBConnection(config::ServerConfig const& config);
-		virtual ~DBConnection() noexcept;
+		DBConnection();
+		~DBConnection() noexcept;
 
-		void ExecuteQuery(std::string const& query);
+		void ExecuteQuery(std::string const& sql, std::function<void(SQLHSTMT& stmt)> const& callback) const;
 
-	protected:
+	private:
 
 		SQLHENV m_env = {};
 		SQLHDBC m_dbc = {};
-		SQLHSTMT m_stmt = {};
-		config::ServerConfig m_config;
 
 	};
 
-	void InitializeDBConnectionPool(std::size_t max_connection, config::ServerConfig const& config);
+	void HandleDiagnosticRecord(SQLHANDLE handle, SQLSMALLINT type, RETCODE ret);
+
+	void InitializeDBConnectionPool(std::size_t max_connection);
 	void CleanUp();
-	std::shared_ptr<DBConnection> RequestConnection();
-	void ReturnConnection(std::shared_ptr<DBConnection>& connection);
+	std::unique_ptr<DBConnection> RequestConnection();
+	void ReturnConnection(std::unique_ptr<DBConnection>& connection);
 
 }
 

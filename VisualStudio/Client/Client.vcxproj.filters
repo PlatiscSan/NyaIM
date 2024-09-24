@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{765275fe-eca2-48f8-8929-4be934415397}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{7933b1ea-b0af-4d03-bc1b-875ee6ba70fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API">
+      <UniqueIdentifier>{829807a4-211f-40b5-b244-a586ed53de3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{22af64a7-78cd-4825-9430-7127636a9257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{828569e2-47ee-415d-af15-6997af2b8780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{e924adbd-de22-4ac6-9092-a2010c0148e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Event">
+      <UniqueIdentifier>{b0448cc1-9b4a-45fa-9957-b419096c1bbf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\Common\NyaIMDef.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Common\NyaIMMessage.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Client\API\APIControl.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\pch.h" />
+    <ClInclude Include="..\..\src\Utility\EventBus.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Utility\Log.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Utility\common_developement.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Client\Platform\Windows\WindowsClientCore.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Client\Platform\Windows\WindowsUtility.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Utility\ThreadPool.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Client\Core\ClientCore.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Client\API\NyaIMClientCore.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Client\Event\AuthenticationEvent.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Client\Core\EventHandler.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\pch.cpp" />
+    <ClCompile Include="..\..\src\Utility\EventBus.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Utility\Log.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Client\Platform\Windows\ClientDLLMain.c">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Client\Platform\Windows\WindowsClientCore.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Client\Platform\Windows\WindowsUtility.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Utility\ThreadPool.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Client\Core\EventHandler.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Client\Core\NyaIMClientCore.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

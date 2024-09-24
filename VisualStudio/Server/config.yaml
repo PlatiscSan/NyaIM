@@ -1,0 +1,5 @@
+DBServer: NyaIM_DB
+DBLogin: sa
+DBAuthentication: admin1234*
+port: 23595
+Authentication Table: Authentication

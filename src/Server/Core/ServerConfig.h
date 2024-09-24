@@ -5,16 +5,14 @@
 
 namespace NyaIMServer::core::config {
 
-	struct ServerConfig {
 
-		std::string db_server_name;
-		std::string db_user_name;
-		std::string db_authentication;
-		std::string server_port;
+	void LoadConfig(int argc, char** argv);
 
-	};
-
-	ServerConfig LoadConfig(int argc, char** argv);
+	std::string const& DBServer() noexcept;
+	std::string const& DBLogin() noexcept;
+	std::string const& DBAuthentication() noexcept;
+	std::uint16_t const& ServerPort() noexcept;
+	std::string const& AuthenticationTable() noexcept;
 
 
 }

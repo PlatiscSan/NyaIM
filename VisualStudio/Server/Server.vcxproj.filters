@@ -13,44 +13,47 @@
     <Filter Include="Platform\Windows">
       <UniqueIdentifier>{266ff4b4-5a03-4b62-b3b3-f3e6fce4352f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{a56a507b-4fa9-4549-baba-ba1a5b7873ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\WIndows">
+      <UniqueIdentifier>{b1c0e095-cdc5-41b1-a8a2-4859371d9e34}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\pch.h" />
-    <ClInclude Include="..\..\src\Common\UserModel.h">
-      <Filter>Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Common\LoginModel.h">
-      <Filter>Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Common\NyaIMType.h">
-      <Filter>Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Server\Core\ConnectionHandler.h">
-      <Filter>Core</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\src\Server\Core\DBConnection.h">
       <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\Server\Core\ServerCore.h">
       <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\Server\Core\ServerData.h">
-      <Filter>Core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Server\Core\ServerError.h">
-      <Filter>Core</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\src\Server\Core\ServerConfig.h">
       <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\Platform\Windows\WindowsServerCore.h">
+    <ClInclude Include="..\..\src\Common\NyaIMDef.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Common\NyaIMMessage.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Utility\EventBus.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Utility\Log.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Utility\common_developement.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Server\Platform\Windows\WindowsServerCore.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\Server\Core\ServerLog.h">
+    <ClInclude Include="..\..\src\Utility\Windows\IOCP.h">
+      <Filter>Utility\WIndows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Server\Core\MessageHandler.h">
       <Filter>Core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Platform\Windows\WindowsUtility.h">
-      <Filter>Platform\Windows</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -58,26 +61,29 @@
     <ClCompile Include="..\..\src\Server\Core\DBConnection.cpp">
       <Filter>Core</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\Server\Core\main.cpp">
-      <Filter>Core</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\Server\Core\ServerCore.cpp">
-      <Filter>Core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\Server\Core\ServerData.cpp">
       <Filter>Core</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\Server\Core\ServerConfig.cpp">
       <Filter>Core</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\Platform\Windows\WindowsServerCore.cpp">
-      <Filter>Platform\Windows</Filter>
+    <ClCompile Include="..\..\src\Utility\EventBus.cpp">
+      <Filter>Utility</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\Server\Core\ServerLog.cpp">
+    <ClCompile Include="..\..\src\Utility\Log.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Server\Core\main.cpp">
       <Filter>Core</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\Platform\Windows\WindowsUtility.cpp">
+    <ClCompile Include="..\..\src\Server\Platform\Windows\WindowsServerCore.cpp">
       <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Utility\Windows\IOCP.cpp">
+      <Filter>Utility\WIndows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Server\Core\MessageHandler.cpp">
+      <Filter>Core</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

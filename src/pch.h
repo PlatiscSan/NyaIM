@@ -18,15 +18,14 @@
 	#include <WS2tcpip.h>
 	#include <iphlpapi.h>
 
-
-
 #elif __linux__
 
 
 #endif // _WIN32
 
+#include "Utility/common_developement.h"
+
 #include <sql.h>
 #include <sqlext.h>
-
 
 #include <nmmintrin.h>
